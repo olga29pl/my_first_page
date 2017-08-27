@@ -5,47 +5,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/cup.png">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" href="css/index-layout.css" type="text/css" />
     <title>Coffeetime</title>
 </head>
 
 <body>
-    <header class="header">
-        <img id="coffee_bean" src="img/coffee_bean.jpg" alt="coffee bean"> Coffeetime
+    <header>
+        <img id="coffee-bean" src="img/coffee_bean.jpg" alt="coffee bean">
+        <h1> Coffeetime</h1>
     </header>
-    <nav class="page_navigation">
-        <div>
-            <ul>
-                <li><a href="#">ABOUT US</a></li>
-                <li><a href="coffee-gallery.html">COFFEE GALLERY</a></li>
-            </ul>
-        </div>
+    <nav>
+        <ul>
+            <li><a href="#">COFFEE GALLERY</a></li>
+            <li><a href="#">CONTACTS</a></li>
+        </ul>
     </nav>
     <main>
         <img id="drinks" src="img/drinks.jpg" alt="Drink">
-        <p id="main_text">
-            Do you have a break and you are a coffee fan?In that case welcome to our cafe "Coffeetime". Here you can find different types of coffee drinks and relax.
+        <p id="main-text">
+            Do you have a break and you are a coffee fan?In that case welcome to our cafe "Coffeetime". Here you can find different types of coffee drinks and relax.<br>You don't know what type of coffee drink to choose.Our coffee gallery can help you...
         </p>
-        <h2>Any questions? Write us.
+        <h2 id="gallery">Coffee gallery</h2>
+        <article>
+            <div class="section">
+                <img src="img/espresso.jpg" alt="espresso">
+                <h4>Espresso</h4>
+                <p>Finely ground coffee brewed rapidly<br>with highly pressurized water.</p>
+            </div>
+            <div class="section">
+                <img src="img/americano.jpg" alt="americano">
+                <h4>Americano</h4>
+                <p>2/3 hot water+1/3 espresso</p>
+            </div>
+            <div class="section">
+                <img src="img/macchiato.jpg" alt="macchiato">
+                <h4>Macchiato</h4>
+                <p>2/3 espresso+1/3 steamed milk</p>
+            </div>
+            <div class="section">
+                <img src="img/cappuccino.jpg" alt="cappuccino">
+                <h4>Cappuccino</h4>
+                <p>espresso+steamed milk</p>
+            </div>
+            <div class="section">
+                <img src="img/latte.jpg" alt="latte">
+                <h4>Latte</h4>
+                <p>espresso+steamed milk<br>(more than in cappuccino)</p>
+            </div>
+        </article>
+        <h2 id="question">Any questions? Write us.
         </h2>
         <form>
-            <input type="text" name="user_name" placeholder="Your name"><br>
-            <input type="text" name="email" placeholder="Email Address">
-            <textarea placeholder="Your message"></textarea>
-            <button type="submit" value="Send">Send</button>
+            <div id="userData">
+                <input type="text" name="user_name" placeholder="Your name"><br>
+                <input type="text" name="email" placeholder="Email Address"><br>
+            </div>
+            <div id="msg">
+                <textarea placeholder="Your message"></textarea><br>
+            </div>
         </form>
-        <article class="work_schedual">
-            <h2>Work sсhedule</h2>
-            <img id="schedual_image" src="img/schedule.png" alt="schedual">
-            <p>Mon-Fri 9.00-19.00<br> Sat-Sun 10.00-17.00</p>
-        </article>
-        <article class="contacts">
-            <h2>Contacts</h2>
+        <button type="submit" value="Send">Send</button>
+
+        <section>
+            <img id="schedule-image" src="img/schedule.png" alt="schedual">
+            <h3>Work sсhedule:</h3>
+            <p>Mon-Fri 9.00-19.00<br>Sat-Sun 10.00-17.00</p>
+        </section>
+        <footer>
             <p><img id="phone" src="img/phone_icon.png" alt="phone icon">(067) 123 45 67</p>
             <p><img id="facebook" src="img/facebook_icon.png" alt="facebook icon"><a href="https://www.facebook.com/coffeetime">https://www.facebook.com/coffeetime</a></p>
             <p><img id="address" src="img/address_icon.png" alt="address icon">Lviv,Fedkovycha 60a</p>
-        </article>
-        <img src="img/address-map.png" alt="map"> 
+        </footer>
     </main>
 </body>
 

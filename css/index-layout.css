@@ -1,0 +1,7 @@
+@media screen and (max-width:720px){
+  footer p{
+      flex-basis: 50%;
+  }  
+}
+
+
