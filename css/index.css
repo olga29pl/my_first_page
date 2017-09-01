@@ -6,7 +6,7 @@ body {
     line-height: 1.5;
 }
 
-main{
+main {
     background-color: #d39c2f;
 }
 
@@ -75,18 +75,18 @@ h2 {
 article {
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-around;
 }
 
 .section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 50%;
 }
 
 .section img {
+    width: 100%;
     height: 225px;
-    width: 300px;
 }
 
 .section p {
@@ -98,31 +98,32 @@ article {
 
 form {
     display: block;
-    max-width: 1000px;
-	margin: 0 auto;
-	min-height: 180px;
+    max-width: 850px;
+    margin: 0 auto;
+    min-height: 180px;
 }
 
 #userData {
-    width: 450px;
+    width: 360px;
     float: left;
 }
 
 #userData input {
-    width: 430px;
+    width: 350px;
     margin: 0 0 20px 0;
     border: 2px solid black;
     font-size: 1.4em;
     height: 50px;
     background-color: #fcf892;
 }
+
 #msg {
-    width: 450px;
+    width: 360px;
     float: right;
-    padding-right: 44px;
 }
+
 #msg textarea {
-    width: 430px;
+    width: 350px;
     height: 100px;
     display: block;
     border: 2px solid black;
@@ -132,17 +133,16 @@ form {
     font-size: 1.4em;
     background-color: #fcf892;
 }
-button{
-    float: right;
-    width: 200px;
+
+button {
+    width: 150px;
     height: 50px;
     background-color: yellow;
     border: 1px solid black;
     border-radius: 10%;
     font-family: Helvetica sans-serif;
     font-size: 1.4em;
-    margin-right: 180px;
-    margin-bottom: 40px;
+    margin-left: 50px;
 }
 
 h4 {
@@ -156,23 +156,25 @@ section {
     flex-flow: row;
     justify-content: flex-start;
     line-height: 1.0;
-    padding-top: 150px;
-    margin-right: 0;
-    padding-bottom: 30px;
-    padding-left: 10px;
+    padding: 150px 0 30px 10px;
 }
+
+button{
+    margin-top: 20px;
+}
+
 #schedule-image {
     height: 150px;
     width: 150px;
 }
+
 h3 {
     font-size: 2.8em;
-    color:  #5b380a;
+    color: #5b380a;
 }
 
 section p {
     padding-top: 30px;
-    padding-left: 20px;
     font-size: 1.4em;
     line-height: 1.5;
 }
@@ -198,12 +200,13 @@ section p {
 
 footer {
     display: flex;
-    flex-flow: row;
+    flex-flow: row wrap;
     justify-content: space-around;
     align-items: center;
     background-color: #5b3604;
-    color: #d39c2f; 
+    color: #d39c2f;
 }
-footer a{
+
+footer a {
     color: #d39c2f;
 }

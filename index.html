@@ -18,8 +18,8 @@
     </header>
     <nav>
         <ul>
-            <li><a href="#">COFFEE GALLERY</a></li>
-            <li><a href="#">CONTACTS</a></li>
+            <li><a href="#gallery">COFFEE GALLERY</a></li>
+            <li><a href="#footer">CONTACTS</a></li>
         </ul>
     </nav>
     <main>
@@ -57,28 +57,33 @@
         </article>
         <h2 id="question">Any questions? Write us.
         </h2>
-        <form>
+        <form id="form">
             <div id="userData">
-                <input type="text" name="user_name" placeholder="Your name"><br>
-                <input type="text" name="email" placeholder="Email Address"><br>
+                <input type="text" id="name" name="user_name" placeholder="Your name"><br>
+                <input type="text" id="email" name="email" placeholder="Email Address"><br>
             </div>
             <div id="msg">
-                <textarea placeholder="Your message"></textarea><br>
+                <textarea id="msg" placeholder="Your message"></textarea><br>
+                <button type="submit" value="Send">Send</button>
             </div>
         </form>
-        <button type="submit" value="Send">Send</button>
 
         <section>
             <img id="schedule-image" src="img/schedule.png" alt="schedual">
             <h3>Work sсhedule:</h3>
             <p>Mon-Fri 9.00-19.00<br>Sat-Sun 10.00-17.00</p>
         </section>
-        <footer>
+        <footer id="footer">
             <p><img id="phone" src="img/phone_icon.png" alt="phone icon">(067) 123 45 67</p>
             <p><img id="facebook" src="img/facebook_icon.png" alt="facebook icon"><a href="https://www.facebook.com/coffeetime">https://www.facebook.com/coffeetime</a></p>
             <p><img id="address" src="img/address_icon.png" alt="address icon">Lviv,Fedkovycha 60a</p>
         </footer>
     </main>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>
