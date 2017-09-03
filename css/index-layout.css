@@ -3,73 +3,83 @@
   #coffee-bean {
     display: none;
   }
-  
+
   article {
     justify-content: center;
   }
-  
+
   form {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
-  
+
   #msg {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  
+
   #msg textarea {
     margin-left: 0;
   }
-  
+
   button {
     margin-left: 0;
   }
-  
+
   footer p {
     min-width: 50%;
   }
 }
 
 @media screen and (max-width:490px) {
-  
+
   header {
     height: 140px;
   }
-  
+
   #coffee_bean {
     width: 70px;
   }
-  
+
   h1 {
     font-size: 3.8em;
   }
-  
-  nav li, #main-text {
+
+  nav li,
+  #main-text {
     font-size: 1.2em;
   }
-  
-  h2, h3 {
+
+  h2,h3 {
     font-size: 2.2em;
   }
-  
+
   #userData {
     width: auto;
   }
-  
+
   #userData input {
     width: auto;
   }
-  
+
   #msg textarea {
     width: auto;
   }
 
   section {
-    display: block;
-    text-align: center;
+    padding-top: 90px;
+  }
+  
+  section p{
+    padding-top: 0px;
+  }
+
+  footer p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }

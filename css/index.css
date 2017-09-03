@@ -59,10 +59,8 @@ nav a {
 
 #main-text {
     font-size: 2.2em;
-    padding: 10px;
+    padding: 20px;
     text-align: justify;
-    padding-right: 10px;
-    padding-left: 10px;
     margin-top: 0;
 }
 
@@ -153,8 +151,8 @@ h4 {
 
 section {
     display: flex;
-    flex-flow: row;
-    justify-content: flex-start;
+    flex-flow: row wrap;
+    justify-content: center;
     line-height: 1.0;
     padding: 150px 0 30px 10px;
 }
