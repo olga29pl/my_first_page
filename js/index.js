@@ -1,5 +1,5 @@
 $(function() {
-  $('#button').click(sendData);
+  $('button').click(sendData);
 })
 
 function sendData(e) {
